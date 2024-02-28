@@ -28,9 +28,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/zxqqingchuan/QCAttributedStringBuilder.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'QCAttributedStringBuilder/Classes/**/*'
+  s.dependency 'YYText'
   
   # s.resource_bundles = {
   #   'QCAttributedStringBuilder' => ['QCAttributedStringBuilder/Assets/*.png']
