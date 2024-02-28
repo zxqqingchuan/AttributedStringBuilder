@@ -1,0 +1,6 @@
+framework module QCAttributedStringBuilder {
+  umbrella header "QCAttributedStringBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}

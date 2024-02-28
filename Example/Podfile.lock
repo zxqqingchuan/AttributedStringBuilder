@@ -1,0 +1,16 @@
+PODS:
+  - QCAttributedStringBuilder (0.1.0)
+
+DEPENDENCIES:
+  - QCAttributedStringBuilder (from `../`)
+
+EXTERNAL SOURCES:
+  QCAttributedStringBuilder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QCAttributedStringBuilder: 855d9be2dd62df1635238a7357e31715e8f5b36c
+
+PODFILE CHECKSUM: 48c5c3000d9e7f9ef973ed460a11a36ce5cfc0bf
+
+COCOAPODS: 1.12.1

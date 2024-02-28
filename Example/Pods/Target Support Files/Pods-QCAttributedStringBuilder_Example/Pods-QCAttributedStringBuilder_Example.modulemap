@@ -1,0 +1,6 @@
+framework module Pods_QCAttributedStringBuilder_Example {
+  umbrella header "Pods-QCAttributedStringBuilder_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

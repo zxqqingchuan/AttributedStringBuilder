@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'QCAttributedStringBuilder_Example' do
+  pod 'QCAttributedStringBuilder', :path => '../'
+
+  target 'QCAttributedStringBuilder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

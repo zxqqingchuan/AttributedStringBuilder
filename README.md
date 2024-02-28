@@ -1,0 +1,29 @@
+# QCAttributedStringBuilder
+
+[![CI Status](https://img.shields.io/travis/zxqqingchuan/QCAttributedStringBuilder.svg?style=flat)](https://travis-ci.org/zxqqingchuan/QCAttributedStringBuilder)
+[![Version](https://img.shields.io/cocoapods/v/QCAttributedStringBuilder.svg?style=flat)](https://cocoapods.org/pods/QCAttributedStringBuilder)
+[![License](https://img.shields.io/cocoapods/l/QCAttributedStringBuilder.svg?style=flat)](https://cocoapods.org/pods/QCAttributedStringBuilder)
+[![Platform](https://img.shields.io/cocoapods/p/QCAttributedStringBuilder.svg?style=flat)](https://cocoapods.org/pods/QCAttributedStringBuilder)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+QCAttributedStringBuilder is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'QCAttributedStringBuilder'
+```
+
+## Author
+
+zxqqingchuan, 147373551+zxqqingchuan@users.noreply.github.com
+
+## License
+
+QCAttributedStringBuilder is available under the MIT license. See the LICENSE file for more info.
