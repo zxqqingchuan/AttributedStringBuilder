@@ -1,5 +1,5 @@
 PODS:
-  - QCAttributedStringBuilder (0.1.0):
+  - QCAttributedStringBuilder (1.0.0):
     - YYText
   - YYText (1.0.7)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  QCAttributedStringBuilder: 414667a707c3cde3f9bc4939645bef335ee46f6d
+  QCAttributedStringBuilder: 96a2347074710c53afc6b1ff13af877d9475514e
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 51dd28b5c09cef08b3e198ef62ffb1f4772f94c4

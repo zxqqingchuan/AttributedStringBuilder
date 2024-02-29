@@ -35,23 +35,23 @@ extension QCAttributedStringBuilder {
 
 extension QCAttributedStringBuilder {
     
-    func setAttributes(_ attrs: [NSAttributedStringKey: Any], range: NSRange) {
+    func setAttributes(_ attrs: [NSAttributedString.Key: Any], range: NSRange) {
         for attr in  attrs {
             setAttribute(attr.key, value: attr.value, range: range)
         }
     }
     
-    func setAttributes(_ attrs: [NSAttributedStringKey: Any]) {
+    func setAttributes(_ attrs: [NSAttributedString.Key: Any]) {
         for attr in  attrs {
             setAttribute(attr.key, value: attr.value)
         }
     }
     
-    func setAttribute(_ name: NSAttributedStringKey, value: Any?) {
+    func setAttribute(_ name: NSAttributedString.Key, value: Any?) {
         setAttribute(name, value: value, range: NSMakeRange(0, attr.length))
     }
     
-    func setAttribute(_ name: NSAttributedStringKey, value: Any?, range: NSRange) {
+    func setAttribute(_ name: NSAttributedString.Key, value: Any?, range: NSRange) {
         if let value = value {
             attr.addAttribute(name, value: value, range: range)
         } else {
