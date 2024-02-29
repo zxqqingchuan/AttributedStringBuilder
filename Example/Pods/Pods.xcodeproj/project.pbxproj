@@ -51,7 +51,7 @@
 		871000F0D0C4416D9781899C3CA8DE3A /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFC3F80ADD1BD797406920DBB7C7CD /* YYTextParser.m */; };
 		8CA74DC301C82E2B116382587B56E370 /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A498B87726AEDC7669C8E0E4857000 /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94B622860E87772DDBC2E6399E9C0A6C /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 978A25CAB78C624CDD1926ED91DF7DD5 /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		951A76782B7DBAB3656D0862C8BCDF80 /* MCAttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351EC1940BBAB8533C5C5D965F563C1 /* MCAttributedStringBuilder.swift */; };
+		951A76782B7DBAB3656D0862C8BCDF80 /* QCAttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351EC1940BBAB8533C5C5D965F563C1 /* QCAttributedStringBuilder.swift */; };
 		99FA2A8F404A1B57609C1C20AD523533 /* UIPasteboard+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = ED31A5ADBF3AA9E3DFE09E54349940AC /* UIPasteboard+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D811DEB3B13546483B8520F95183CAF /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FC23C60086071956A5281E58C73BCC4F /* YYTextAttribute.m */; };
 		9EE24228106E612031979232E693C96B /* Pods-QCAttributedStringBuilder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BED94E5BA2E3802C23C04C18FE6956E /* Pods-QCAttributedStringBuilder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,7 +128,7 @@
 		27E552C09450ACFD4E68B8EFD40EF4B6 /* Pods-QCAttributedStringBuilder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QCAttributedStringBuilder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2829A570D5CF8B04F8A28C182789CBF5 /* QCAttributedStringAttributeMutation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QCAttributedStringAttributeMutation.swift; path = QCAttributedStringBuilder/Classes/QCAttributedStringAttributeMutation.swift; sourceTree = "<group>"; };
 		321612641E01658E8A2DE436C1FEF85C /* YYText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYText-dummy.m"; sourceTree = "<group>"; };
-		3351EC1940BBAB8533C5C5D965F563C1 /* MCAttributedStringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAttributedStringBuilder.swift; path = QCAttributedStringBuilder/Classes/MCAttributedStringBuilder.swift; sourceTree = "<group>"; };
+		3351EC1940BBAB8533C5C5D965F563C1 /* QCAttributedStringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QCAttributedStringBuilder.swift; path = QCAttributedStringBuilder/Classes/QCAttributedStringBuilder.swift; sourceTree = "<group>"; };
 		3573418153D281BB02558D0E90CAFCAF /* QCAttributedStringBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QCAttributedStringBuilder.debug.xcconfig; sourceTree = "<group>"; };
 		377259CCB06E479E597A5BB0ADCD100B /* YYTextWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextWeakProxy.h; path = YYText/Utility/YYTextWeakProxy.h; sourceTree = "<group>"; };
 		37CB8C571FE9E3AF15735A6940F4B157 /* QCAttributedStringBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QCAttributedStringBuilder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -288,7 +288,7 @@
 				810E2E3937CC4C88FBA4C5CD0FF17A53 /* QCAttributedString.swift */,
 				F688F2D17133B16D2CF8878A828AFE87 /* QCAttributedStringAttribute.swift */,
 				2829A570D5CF8B04F8A28C182789CBF5 /* QCAttributedStringAttributeMutation.swift */,
-				3351EC1940BBAB8533C5C5D965F563C1 /* MCAttributedStringBuilder.swift */,
+				3351EC1940BBAB8533C5C5D965F563C1 /* QCAttributedStringBuilder.swift */,
 				01023FBAE2193B5810FB5D832AF02630 /* QCAttributedText+Utils.swift */,
 				8334C0EC9EC36FC11066C2A072D5D271 /* Pod */,
 				F7F147AC38EE808AB475BAC25DDC6D66 /* Support Files */,
@@ -720,7 +720,7 @@
 				D479408139638064E375705D0E341E6D /* QCAttributedString.swift in Sources */,
 				2460B9CF64E3C9D7DF05F077F958FBA1 /* QCAttributedStringAttribute.swift in Sources */,
 				4E1BAE9CFC04AD6E80FDAF4023654EAE /* QCAttributedStringAttributeMutation.swift in Sources */,
-				951A76782B7DBAB3656D0862C8BCDF80 /* MCAttributedStringBuilder.swift in Sources */,
+				951A76782B7DBAB3656D0862C8BCDF80 /* QCAttributedStringBuilder.swift in Sources */,
 				3DF1D64F224ECFA4A412FEA9E33DB639 /* QCAttributedText+Utils.swift in Sources */,
 				BD6D936B94053FE257B50832B4B9E594 /* QCAttributedStringBuilder-dummy.m in Sources */,
 			);
