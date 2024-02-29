@@ -17,6 +17,34 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 * 支持文字里嵌入 UIImageView, UIView, CALayer。
 * Attachment 依赖 YYText 实现。
 
+## Example
+
+```
+label.attributedText = QCAttributedString("abc")
+    .color(.blue)
+    .font(.systemFont(ofSize: 10))
+    .alignment(.left)
+    .append(", efg")
+    .appendArr(
+        QCAttributedString(", emn")
+            .color(.green)
+            .build()
+    )
+    .firstSet(.red, of: "e")
+    .firstReplace(
+        "abc",
+        with:
+            QCAttributedString("cba")
+            .color(.cyan)
+            .font(.systemFont(ofSize: 20))
+            .build()
+    )
+    .appendImage...
+    .appendSpace...
+    .appendRoundedLabel...
+    .build()
+```
+
 ## Installation
 
 QCAttributedStringBuilder is available through [CocoaPods](https://cocoapods.org). To install
