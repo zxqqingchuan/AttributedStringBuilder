@@ -48,7 +48,11 @@ post_install do |installer|
 end
 ```
 
+Or add libarclite_iphonesimulatoros.a, libarclite_iphoneos.a into your /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib.
+
 ## Requirements
+
+iOS >= 13.0
 
 ## Feature
 
