@@ -14,7 +14,7 @@ import Foundation
      .font(.systemFont(ofSize: 10))
      .alignment(.left)
      .append(", efg")
-     .appendArr(
+     .appendAttr(
          QCAttributedString(", emn")
              .color(.green)
              .build()

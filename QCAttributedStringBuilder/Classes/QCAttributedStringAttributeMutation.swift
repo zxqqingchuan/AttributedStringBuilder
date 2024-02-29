@@ -12,7 +12,7 @@ public protocol QCAttributedStringAttributeMutation<Builder>: QCAttributedString
     
     func append(_ str: String?) -> Builder
     
-    func appendArr(_ attr: NSAttributedString?) -> Builder
+    func appendAttr(_ attr: NSAttributedString?) -> Builder
     
     func firstSet(_ color: UIColor?, of str: String) -> Builder
     
@@ -32,7 +32,7 @@ extension QCAttributedStringAttributeMutation where Builder: QCAttributedStringB
         return builder
     }
     
-    public func appendArr(_ attr: NSAttributedString?) -> Builder {
+    public func appendAttr(_ attr: NSAttributedString?) -> Builder {
         if let attr = attr {
             builder.attr.append(attr)
         }
@@ -58,7 +58,7 @@ extension QCAttributedStringAttributeMutation where Builder: QCAttributedStringB
     public func appendImage(_ image: UIImage?, size: CGSize, leavingType: LeavingType) -> Builder {
         guard let image = image else { return builder }
         let font = builder.attr.yy_font ?? Builder.defaultFont
-        return appendArr(.attributed(image: image, size: size, font: font, leavingType: leavingType))
+        return appendAttr(.attributed(image: image, size: size, font: font, leavingType: leavingType))
     }
 
 }
@@ -126,7 +126,7 @@ extension QCAttributedStringAttributeMutation where Self == QCYYAttributedString
                                                leavingType: LeavingType) -> Builder {
         guard let content = content else { return builder }
         let font = builder.attr.yy_font ?? Builder.defaultFont
-        _ = appendArr(
+        _ = appendAttr(
             NSAttributedString.yy_attributed(
                 content: content,
                 size: size,
