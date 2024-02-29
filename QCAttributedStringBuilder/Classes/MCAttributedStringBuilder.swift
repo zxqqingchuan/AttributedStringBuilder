@@ -1,5 +1,5 @@
 //
-//  MCAttributedStringBuilder.swift
+//  QCAttributedStringBuilder.swift
 //  MCAttributedText
 //
 //  Created by qingchuan on 2024/2/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol MCAttributedStringBuilder {
+public protocol QCAttributedStringBuilder {
     
     var attr: NSMutableAttributedString { get set }
     
@@ -17,7 +17,7 @@ public protocol MCAttributedStringBuilder {
     
 }
 
-extension MCAttributedStringBuilder {
+extension QCAttributedStringBuilder {
     
     public func build() -> NSAttributedString {
         return .init(attributedString: attr)
@@ -33,7 +33,7 @@ extension MCAttributedStringBuilder {
 
 }
 
-extension MCAttributedStringBuilder {
+extension QCAttributedStringBuilder {
     
     func setAttributes(_ attrs: [NSAttributedStringKey: Any], range: NSRange) {
         for attr in  attrs {
@@ -61,7 +61,7 @@ extension MCAttributedStringBuilder {
     
 }
 
-extension MCAttributedStringBuilder {
+extension QCAttributedStringBuilder {
     
     func paragraphStyles() -> [NSMutableParagraphStyle] {
         let range = NSMakeRange(0, attr.length)

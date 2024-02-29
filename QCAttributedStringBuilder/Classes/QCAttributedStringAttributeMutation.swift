@@ -1,5 +1,5 @@
 //
-//  MCAttributedStringAttributeMutation.swift
+//  QCAttributedStringAttributeMutation.swift
 //  MCAttributedText
 //
 //  Created by qingchuan on 2024/2/22.
@@ -8,7 +8,7 @@
 import Foundation
 import YYText
 
-public protocol MCAttributedStringAttributeMutation<Builder>: MCAttributedStringAttribute where Builder: MCAttributedStringAttributeMutation {
+public protocol QCAttributedStringAttributeMutation<Builder>: QCAttributedStringAttribute where Builder: QCAttributedStringAttributeMutation {
     
     func append(_ str: String?) -> Builder
     
@@ -22,7 +22,7 @@ public protocol MCAttributedStringAttributeMutation<Builder>: MCAttributedString
 
 }
 
-extension MCAttributedStringAttributeMutation where Builder: MCAttributedStringBuilder {
+extension QCAttributedStringAttributeMutation where Builder: QCAttributedStringBuilder {
     
     public func append(_ str: String?) -> Builder {
         guard let str = str else { return builder }
@@ -63,7 +63,7 @@ extension MCAttributedStringAttributeMutation where Builder: MCAttributedStringB
 
 }
 
-extension MCAttributedStringAttributeMutation where Self == MCYYAttributedString {
+extension QCAttributedStringAttributeMutation where Self == MCYYAttributedString {
     
     public func appendImage(_ image: UIImage?, leavingType: LeavingType) -> Builder {
         return appendContent(image, leavingType: leavingType)

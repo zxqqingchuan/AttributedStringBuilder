@@ -1,5 +1,5 @@
 //
-//  MCAttributedStringAttribute.swift
+//  QCAttributedStringAttribute.swift
 //  MCAttributedText
 //
 //  Created by qingchuan on 2024/2/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol MCAttributedStringAttribute<Builder> where Builder: MCAttributedStringAttribute {
+public protocol QCAttributedStringAttribute<Builder> where Builder: QCAttributedStringAttribute {
     
     associatedtype Builder
     
@@ -65,7 +65,7 @@ public protocol MCAttributedStringAttribute<Builder> where Builder: MCAttributed
     
 }
 
-extension MCAttributedStringAttribute where Builder: MCAttributedStringBuilder {
+extension QCAttributedStringAttribute where Builder: QCAttributedStringBuilder {
     
     public func color(_ color: UIColor?) -> Builder {
         builder.setAttribute(.foregroundColor, value: color)

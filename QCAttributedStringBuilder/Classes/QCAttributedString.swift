@@ -1,5 +1,5 @@
 //
-//  MCAttributedString.swift
+//  QCAttributedString.swift
 //  MCAttributedText
 //
 //  Created by qingchuan on 2024/2/26.
@@ -9,13 +9,13 @@ import Foundation
 
 /**
  使用方式：
- label.attributedText = MCAttributedString("abc")
+ label.attributedText = QCAttributedString("abc")
      .color(.blue)
      .font(.systemFont(ofSize: 10))
      .alignment(.left)
      .append(", efg")
      .appendArr(
-         MCAttributedString(", emn")
+         QCAttributedString(", emn")
              .color(.green)
              .build()
      )
@@ -23,14 +23,14 @@ import Foundation
      .firstReplace(
          "abc",
          with:
-             MCAttributedString("cba")
+             QCAttributedString("cba")
              .color(.cyan)
              .font(.systemFont(ofSize: 20))
              .build()
      )
      .build()
  */
-public struct MCAttributedString: MCAttributedStringBuilder {
+public struct QCAttributedString: QCAttributedStringBuilder {
     
     public var attr: NSMutableAttributedString
     
@@ -50,7 +50,7 @@ public struct MCAttributedString: MCAttributedStringBuilder {
     
 }
 
-extension MCAttributedString: MCAttributedStringAttributeMutation {
+extension QCAttributedString: QCAttributedStringAttributeMutation {
     
     public typealias Builder = Self
     
@@ -64,7 +64,7 @@ extension MCAttributedString: MCAttributedStringAttributeMutation {
  YYText 有些富文本处理只能作用于 YYLabel，UILabel 无法识别，例如 yy_attachment。
  故：如果想用 appendRoundedLabel, appendSpace, appendContent，需使用 YYLabel，同时使用 MCYYAttributedString 类构建 attr。
  */
-public struct MCYYAttributedString: MCAttributedStringBuilder {
+public struct MCYYAttributedString: QCAttributedStringBuilder {
     
     public var attr: NSMutableAttributedString
     
@@ -84,7 +84,7 @@ public struct MCYYAttributedString: MCAttributedStringBuilder {
     
 }
 
-extension MCYYAttributedString: MCAttributedStringAttributeMutation {
+extension MCYYAttributedString: QCAttributedStringAttributeMutation {
     
     public typealias Builder = Self
     
