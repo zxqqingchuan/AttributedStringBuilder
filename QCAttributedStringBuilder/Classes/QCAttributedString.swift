@@ -62,9 +62,9 @@ extension QCAttributedString: QCAttributedStringAttributeMutation {
 
 /**
  YYText 有些富文本处理只能作用于 YYLabel，UILabel 无法识别，例如 yy_attachment。
- 故：如果想用 appendRoundedLabel, appendSpace, appendContent，需使用 YYLabel，同时使用 MCYYAttributedString 类构建 attr。
+ 故：如果想用 appendRoundedLabel, appendSpace, appendContent，需使用 YYLabel，同时使用 QCYYAttributedString 类构建 attr。
  */
-public struct MCYYAttributedString: QCAttributedStringBuilder {
+public struct QCYYAttributedString: QCAttributedStringBuilder {
     
     public var attr: NSMutableAttributedString
     
@@ -84,7 +84,7 @@ public struct MCYYAttributedString: QCAttributedStringBuilder {
     
 }
 
-extension MCYYAttributedString: QCAttributedStringAttributeMutation {
+extension QCYYAttributedString: QCAttributedStringAttributeMutation {
     
     public typealias Builder = Self
     

@@ -63,7 +63,7 @@ extension QCAttributedStringAttributeMutation where Builder: QCAttributedStringB
 
 }
 
-extension QCAttributedStringAttributeMutation where Self == MCYYAttributedString {
+extension QCAttributedStringAttributeMutation where Self == QCYYAttributedString {
     
     public func appendImage(_ image: UIImage?, leavingType: LeavingType) -> Builder {
         return appendContent(image, leavingType: leavingType)
