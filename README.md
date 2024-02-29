@@ -11,6 +11,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+## Feature
+* Builder 模式，支持链式调用。
+* 支持文字排版 RTL 模式。
+* 支持文字里嵌入 UIImageView, UIView, CALayer。
+* Attachment 依赖 YYText 实现。
+
 ## Installation
 
 QCAttributedStringBuilder is available through [CocoaPods](https://cocoapods.org). To install
